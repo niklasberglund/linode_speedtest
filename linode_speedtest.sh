@@ -13,6 +13,7 @@ server_name=(
 	"Dallas"
 	"Fremont"
 	"Singapore"
+	"Frankfurt"
 )
 
 server_url=(
@@ -23,6 +24,7 @@ server_url=(
 	"speedtest.dallas.linode.com/100MB-dallas.bin"
 	"speedtest.fremont.linode.com/100MB-fremont.bin"
 	"speedtest.singapore.linode.com/100MB-singapore.bin"
+	"speedtest.frankfurt.linode.com/100MB-frankfurt.bin"
 )
 
 server_starttransfer=()
