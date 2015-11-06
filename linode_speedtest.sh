@@ -8,6 +8,7 @@
 server_name=(
 	"Tokyo"
 	"London"
+    "Frankfurt"
 	"Newark"
 	"Atlanta"
 	"Dallas"
@@ -18,6 +19,7 @@ server_name=(
 server_url=(
 	"speedtest.tokyo.linode.com/100MB-tokyo.bin"
 	"speedtest.london.linode.com/100MB-london.bin"
+    "speedtest.frankfurt.linode.com/100MB-frankfurt.bin"
 	"speedtest.newark.linode.com/100MB-newark.bin"
 	"speedtest.atlanta.linode.com/100MB-atlanta.bin"
 	"speedtest.dallas.linode.com/100MB-dallas.bin"
