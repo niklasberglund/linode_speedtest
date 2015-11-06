@@ -30,6 +30,33 @@ server_url=(
 server_starttransfer=()
 server_speed_download=()
 
+trap finish EXIT
+
+function finish {
+    echo ""
+    # result table
+    printf "\x1b[7m%-20s | %-20s | %-20s\x1b[0m\n" "Server location" "Avg. download speed" "Start time"
+
+    j=0
+
+    for s in ${server_name[@]}
+    do
+        if [ -z ${server_speed_download[$j]} ]
+        then
+            server_speed_download[$j]="- "
+        fi
+        
+        if [ -z ${server_starttransfer[$j]} ]
+        then
+            server_starttransfer[$j]="- "
+        fi
+        
+    	printf "%-20s | %-20s | %-20s\n" ${server_name[$j]} "${server_speed_download[$j]}kb/s" "${server_starttransfer[$j]}s"
+    	((j++))
+    done
+
+    echo ""
+}
 
 i=0
 
@@ -46,17 +73,3 @@ do
 	echo ""
 	((i++))
 done
-
-
-# result table
-printf "\x1b[7m%-20s | %-20s | %-20s\x1b[0m\n" "Server location" "Avg. download speed" "Start time"
-
-j=0
-
-for s in ${server_name[@]}
-do
-	printf "%-20s | %-20s | %-20s\n" ${server_name[$j]} "${server_speed_download[$j]}kb/s" "${server_starttransfer[$j]}s"
-	((j++))
-done
-
-echo ""
