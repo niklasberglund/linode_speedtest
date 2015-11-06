@@ -7,24 +7,24 @@
 
 server_name=(
 	"Tokyo"
+    "Singapore"
 	"London"
     "Frankfurt"
 	"Newark"
 	"Atlanta"
 	"Dallas"
 	"Fremont"
-	"Singapore"
 )
 
 server_url=(
 	"speedtest.tokyo.linode.com/100MB-tokyo.bin"
+    "speedtest.singapore.linode.com/100MB-singapore.bin"
 	"speedtest.london.linode.com/100MB-london.bin"
     "speedtest.frankfurt.linode.com/100MB-frankfurt.bin"
 	"speedtest.newark.linode.com/100MB-newark.bin"
 	"speedtest.atlanta.linode.com/100MB-atlanta.bin"
 	"speedtest.dallas.linode.com/100MB-dallas.bin"
 	"speedtest.fremont.linode.com/100MB-fremont.bin"
-	"speedtest.singapore.linode.com/100MB-singapore.bin"
 )
 
 server_starttransfer=()
